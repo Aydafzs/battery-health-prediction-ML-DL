@@ -1,3 +1,4 @@
+<img width="1024" height="1024" alt="banner" src="https://github.com/user-attachments/assets/48677f00-5ee4-411a-9c3b-8e89b5330658" />
 # battery-health-prediction-ML-DL
 Comparative analysis of ML and LSTM models for lithium-ion battery voltage prediction using NASA dataset.
 #  Battery Health Prediction using Machine Learning and Deep Learning
