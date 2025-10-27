@@ -1,25 +1,56 @@
-
 <img width="1272" height="400" alt="banner" src="https://github.com/user-attachments/assets/a49a1652-1883-4f12-a4ef-2dd96b8bdb89" />
+# 🔋 Battery Health Prediction using Machine Learning and Deep Learning
 
-# battery-health-prediction-ML-DL
-Comparative analysis of ML and LSTM models for lithium-ion battery voltage prediction using NASA dataset.
-#  Battery Health Prediction using Machine Learning and Deep Learning
 
-This repository contains the implementation and results of a research project focused on predicting lithium-ion battery voltage and degradation behavior using both Machine Learning (Random Forest, XGBoost) and Deep Learning (LSTM) models.
-## ☁️ Full Project Access
-All datasets, trained models and complete results are available in Google Drive:  
-🔗 [Open the full project via Google Drive](https://drive.google.com/file/d/1iaPDphWsycz6nQNrwNkPU6e3jV7D1KfG/view?usp=sharing)
+### Comparative analysis of ML and LSTM models for lithium-ion battery voltage prediction using the NASA dataset  
 
 ---
 
-##  Dataset  
-Source: NASA Accelerated Life Testing (ALT) dataset  
-Includes voltage, current, temperature, and time features from Li-ion batteries under different load conditions.  
-[Download](https://data.nasa.gov/docs/legacy/battery_alt_dataset.zip)
+## 🧩 Overview  
+This project focuses on predicting **battery voltage and degradation behavior** using both traditional **Machine Learning** methods (Random Forest, XGBoost) and a **Deep Learning** model (LSTM).  
+The NASA Accelerated Life Testing (ALT) dataset is used as the main source of data.  
+
+The goal was to understand how different models perform when predicting voltage over time and to compare their performance in terms of accuracy and generalization.  
 
 ---
 
-##  Models Used  
+## ☁️ Full Project Access  
+All datasets, trained models, and results are available here:  
+🔗 [Open full project on Google Drive](https://drive.google.com/file/d/1iaPDphWsycz6nQNrwNkPU6e3jV7D1KfG/view?usp=sharing)
+
+---
+
+## 📦 Dataset  
+**Source:** [NASA Accelerated Life Testing (ALT) dataset](https://data.nasa.gov/docs/legacy/battery_alt_dataset.zip)  
+
+The dataset includes several Li-ion batteries tested under different load and temperature conditions.  
+Main features:  
+- Voltage (V)  
+- Current (A)  
+- Temperature (°C)  
+- Time (s)  
+- Cycle number  
+
+---
+
+## ⚙️ Folder Structure  
+```
+
+battery-health-prediction-ML-DL/
+│
+├── data/              # NASA battery dataset (raw and processed)
+├── notebooks/         # Jupyter notebooks for ML & LSTM models
+├── models/            # Trained Random Forest, XGBoost, and LSTM models
+├── results/           # Figures and performance plots
+├── requirements.txt   # Python dependencies
+└── README.md          # Project description
+
+```
+
+---
+
+## 🧠 Models Used  
+
 | Model             | MAE    | RMSE   | R²     |
 |-------------------|--------|--------|--------|
 | Linear Regression | 0.500  | 0.840  | 0.33   |
@@ -27,61 +58,75 @@ Includes voltage, current, temperature, and time features from Li-ion batteries 
 | XGBoost           | 0.113  | 0.278  | 0.9268 |
 | LSTM              | 0.020  | 0.021  | ~0.97  |
 
+The Random Forest model achieved the best results overall, followed by the LSTM network, which performed very well on time-series predictions.  
+
 ---
 
-##  Folder Structure  
-battery-health-prediction-ML-DL/
-│
-├── data/ # NASA battery dataset (raw and processed)
-├── notebooks/ # Jupyter notebooks for ML & LSTM models
-├── models/ # Trained Random Forest, XGBoost, and LSTM models
-├── results/ # Performance plots and visualizations
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+## 🚀 How to Run  
 
-How to Run
-
-Clone the repository
-
-git clone https://github.com/username/battery-health-prediction-ML-DL.git
+### Clone the repository  
+```bash
+git clone https://github.com/Aydafzs/battery-health-prediction-ML-DL.git
 cd battery-health-prediction-ML-DL
+```
 
+### Install dependencies
 
-Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
+### Run the code
 
-Run the models
-
+```bash
 python main.py
+```
 
-📊 Results Summary
+You can also open the notebooks step by step:
 
-Machine Learning models (RF, XGBoost) provided excellent accuracy on test data, with Random Forest achieving the lowest MAE (0.0146).
+```bash
+jupyter notebook notebooks/
+```
 
-Deep Learning (LSTM) captured temporal voltage trends effectively, with near-perfect correlation between predicted and actual battery voltage curves.
+---
 
-Results confirm that ensemble ML models are efficient for quick inference, while LSTM is superior for long-term cycle prediction.
+## 📊 Results Summary
 
-🔍 Visualization Samples
+* Machine learning models like **Random Forest** and **XGBoost** achieved very strong performance.
+* **LSTM** was excellent for capturing the time-series behavior of battery voltage.
+* The Random Forest model gave the lowest MAE (0.0146), showing very good accuracy.
 
-Voltage vs. Cycle plots for Random Forest and LSTM predictions
+---
 
-LSTM loss curve during training
+## 🔍 Visualizations
 
-Feature importance visualization for RF and XGBoost
+The project includes several visualizations such as:
 
-🧠 Key Insights
+* Voltage vs. Cycle plots (predicted vs. actual)
+* LSTM training loss curve
+* Feature importance (RF and XGBoost)
+* Correlation map between features
 
-Temperature and discharge current significantly affect battery degradation.
+All figures are available in the `results/` folder.
 
-Time-series models (LSTM) outperform static ML models for sequence prediction.
+---
 
-Feature engineering (voltage statistics, ΔV/Δt) improves accuracy of ML methods.
+## 💡 Key Points
 
-🧾 Citation
+* **Temperature** and **current** have a big impact on battery health.
+* **LSTM** performs better on long time-series predictions.
+* **Feature engineering** (like ΔV/Δt and statistical features) helps machine learning models improve.
+* Combining **RF and LSTM** could be a great idea for future work.
 
-If you use this project, please cite as:
+---
 
-Mahmoudi, F. (2025). Battery Health Prediction using Machine Learning and Deep Learning (NASA Dataset). GitHub Repository.
+## 👩‍🔬 Author  
+
+**Fatemeh Mahmoudi**  
+M.Sc. student in Nanomaterials Engineering, Sharif University of Technology  
+
+Interested in **Battery Materials, Machine Learning, and Sustainable Energy**  
+
+📍 Tehran, Iran  
+📧 [fatemeh.mahmoudi@sharif.edu](mailto:fatemeh.mahmoudi@sharif.edu)  
+🔗 [LinkedIn](https://www.linkedin.com/in/fatemeh-mahmoudi-a577a0103) | [GitHub](https://github.com/Aydafzs)
