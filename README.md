@@ -1,6 +1,6 @@
 <img width="1272" height="400" alt="banner" src="https://github.com/user-attachments/assets/a49a1652-1883-4f12-a4ef-2dd96b8bdb89" />
-# 🔋 Battery Health Prediction using Machine Learning and Deep Learning
 
+# 🔋 Battery Health Prediction using Machine Learning and Deep Learning  
 
 ### Comparative analysis of ML and LSTM models for lithium-ion battery voltage prediction using the NASA dataset  
 
@@ -24,7 +24,8 @@ All datasets, trained models, and results are available here:
 **Source:** [NASA Accelerated Life Testing (ALT) dataset](https://data.nasa.gov/docs/legacy/battery_alt_dataset.zip)  
 
 The dataset includes several Li-ion batteries tested under different load and temperature conditions.  
-Main features:  
+
+**Main features:**  
 - Voltage (V)  
 - Current (A)  
 - Temperature (°C)  
@@ -45,7 +46,7 @@ battery-health-prediction-ML-DL/
 ├── requirements.txt   # Python dependencies
 └── README.md          # Project description
 
-```
+````
 
 ---
 
@@ -58,7 +59,7 @@ battery-health-prediction-ML-DL/
 | XGBoost           | 0.113  | 0.278  | 0.9268 |
 | LSTM              | 0.020  | 0.021  | ~0.97  |
 
-The Random Forest model achieved the best results overall, followed by the LSTM network, which performed very well on time-series predictions.  
+The **Random Forest** model achieved the best results overall, followed by the **LSTM** network, which performed very well on time-series predictions.  
 
 ---
 
@@ -68,7 +69,7 @@ The Random Forest model achieved the best results overall, followed by the LSTM 
 ```bash
 git clone https://github.com/Aydafzs/battery-health-prediction-ML-DL.git
 cd battery-health-prediction-ML-DL
-```
+````
 
 ### Install dependencies
 
@@ -120,13 +121,13 @@ All figures are available in the `results/` folder.
 
 ---
 
-## 👩‍🔬 Author  
+## 👩‍🔬 Author
 
-**Fatemeh Mahmoudi**  
-M.Sc. student in Nanomaterials Engineering, Sharif University of Technology  
+**Fatemeh Mahmoudi**
+M.Sc. student in Nanomaterials Engineering, Sharif University of Technology
 
-Interested in **Battery Materials, Machine Learning, and Sustainable Energy**  
+Interested in **Battery Materials, Machine Learning, and Sustainable Energy**
 
-📍 Tehran, Iran  
-📧 [fatemeh.mahmoudi@sharif.edu](mailto:fatemeh.mahmoudi@sharif.edu)  
+📍 Tehran, Iran
+📧 [fatemeh.mahmoudi@sharif.edu](mailto:fatemeh.mahmoudi@sharif.edu)
 🔗 [LinkedIn](https://www.linkedin.com/in/fatemeh-mahmoudi-a577a0103) | [GitHub](https://github.com/Aydafzs)
